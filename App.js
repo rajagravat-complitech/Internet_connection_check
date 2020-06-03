@@ -5,7 +5,7 @@ import NetInfo from "@react-native-community/netinfo";
 const App=()=>
 {
   let a
-  //const {isInternetReachable,setisInternetReachable} =useState()
+
   useEffect(()=>{
     const unsubscribe = NetInfo.addEventListener((internet) => {
       console.log("IS INTERNET REACHABLE", internet.isInternetReachable);
